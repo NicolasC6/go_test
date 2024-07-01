@@ -11,6 +11,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 echo 'Building..'
+                cd hello
+                go run .
             }
         }
         stage('Test') {
